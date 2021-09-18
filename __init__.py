@@ -42,22 +42,6 @@ class Vector2:
         else:
             raise TypeError("Must be int", value)
 
-    def normalized(self):
-        x, y = 0, 0
-        if self.__x < 0:
-            x = -1
-        elif self.__x == 0:
-           x = 0
-        else:
-            x = 1 
-
-        if self.__y < 0:
-            y = -1
-        elif self.__y == 0:
-            y = 0
-        else:
-            y = 1
-        return x, y 
     
     def distance_to(self, vector):
         if not isinstance(vector, Vector2):
