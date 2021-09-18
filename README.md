@@ -26,7 +26,8 @@ from EasyVectors import Vector2
 
 vector = Vector2()
 vector2 = Vector2(56, 81)
-vector.update(8 , 1)
+vector.x = 1
+vector.y = 8
 
 print(vector.distance_to(vector2))
 ```
@@ -63,7 +64,8 @@ from EasyVectors import Vector2
 
 vector = Vector2()
 vector2 = Vector2(56, 81)
-vector.update(8 , 1)
+vector.x = 8
+vector.y = 1
 
 print(vector.distance_to(vector2))
 ```
