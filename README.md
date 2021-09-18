@@ -10,7 +10,7 @@ library that helps when working with coordinates like (Pillow, Pygame)
 from EasyVectors import Vector2
 
 vector = Vector2(10, 67)
-print(vector.get('x'))
+print(vector.x)
 ```
 
 This code will give the output 10
@@ -18,7 +18,7 @@ This code will give the output 10
 from EasyVectors import Vector2
 
 vector = Vector2()
-print(vector.getstr())
+print(str(vector))
 ```
 This code will give the output X 0  Y 0 
 ```python 
@@ -44,7 +44,7 @@ This code will give the output 93.2952303175248
 from EasyVectors import Vector2
 
 vector = Vector2(10, 67)
-print(vector.get('x'))
+print(vector.x)
 ```
 
 Этот код выведет 10
@@ -53,7 +53,7 @@ print(vector.get('x'))
 from EasyVectors import Vector2
 
 vector = Vector2()
-print(vector.getstr())
+print(str(vector))
 ```
 
 Этот код выведет X 0  Y 0 
