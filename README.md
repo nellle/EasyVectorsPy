@@ -2,7 +2,7 @@
 # EasyVectorsPy
 ## Eng 
 
-library that helps when working with coordinates (Pillow, Pygame)
+library that helps when working with coordinates like (Pillow, Pygame)
 
 ### Examples ###
 
