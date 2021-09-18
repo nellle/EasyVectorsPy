@@ -1,24 +1,31 @@
 from math import hypot
 class Vector2:
 
-    __slots__ = ['__x', '__y']
+    __slots__ = ('__x', '__y')
 
 
     def __init__(self, x=0, y=0):
         self.__x = x
         self.__y = y 
+
+    def __str__(self):
+        return f'X {self.__x} Y {self.__y}'
     
-    def getstr(self):
-        return f"X {self.__x} Y {self.__y}"
+    @property
+    def x(self):
+        return self.__x
     
-    def get(self, type = None):
-        a = {'x': self.__x, 'y': self.__y}
-        if not type:
-            return self.__x, self.__y
-        elif type not in ['x', 'y']:
-            return None
-        else:
-            return a[type]
+    @x.setter
+    def x(self, num):
+        self.__x += num
+
+    @property
+    def y(self):
+        return self.__y
+
+    @y.setter
+    def y(self, num):
+        self.__y += num
     
     def zero(self):
         self.__x, self.__y = 0, 0
